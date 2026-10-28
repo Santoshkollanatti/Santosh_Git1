@@ -1,1 +1,154 @@
 This is my First Program
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/SANTOSH/.git/
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ git --version
+git version 2.55.0.windows.5
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ mkdir Santosh1
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ cd Santosh1
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/SANTOSH/Santosh1/.git/
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git config --global user.name "Santosh"
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git config --global user.email "santoshkollanatti75@gmail.com"
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ echo "This is my First Program"
+This is my First Program
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ echo "This is my First Program" >Santu1,txt
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ echo "This is my First Program" >Santu1.txt
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Santu1,txt
+        Santu1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git Santu1.txt
+git: 'Santu1.txt' is not a git command. See 'git --help'.
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git add Santu1.txt
+warning: in the working copy of 'Santu1.txt', LF will be replaced by CRLF the next time Git touches it
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Santu1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Santu1,txt
+
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git commit -m "My Initial First file is Ready"
+[master (root-commit) 3311105] My Initial First file is Ready
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Santu1.txt
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git branch
+* master
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git branch Santosh1
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git checkout Santosh2
+error: pathspec 'Santosh2' did not match any file(s) known to git
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (master)
+$ git checkout Santosh1
+Switched to branch 'Santosh1'
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git branch
+* Santosh1
+  master
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git commit -m "Branch is Created"
+On branch Santosh1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Santu1,txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git add .
+warning: in the working copy of 'Santu1,txt', LF will be replaced by CRLF the next time Git touches it
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git status
+On branch Santosh1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Santu1,txt
+
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git commit -m "Branch is Created"
+[Santosh1 c515bfb] Branch is Created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Santu1,txt
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git status
+On branch Santosh1
+nothing to commit, working tree clean
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git remote add origin https://github.com/Santoshkollanatti/Santosh_Git1.git
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git remote -v
+origin  https://github.com/Santoshkollanatti/Santosh_Git1.git (fetch)
+origin  https://github.com/Santoshkollanatti/Santosh_Git1.git (push)
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git push origin Santosh1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 475 bytes | 475.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Santoshkollanatti/Santosh_Git1.git
+ * [new branch]      Santosh1 -> Santosh1
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$ git merge Santosh1
+Already up to date.
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh1 (Santosh1)
+$
